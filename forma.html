@@ -1,0 +1,106 @@
+﻿<HTML>
+    <head>
+        <!--Расширенное использование элемента meta-->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-language" content="ru-RU">
+        <meta http-equiv="Cache-Control" content="public">
+        <meta name="description" CONTENT="Данный сайт содержит информацию о языке Kotlin, на нем Вы можете узнать историю языка программирования и его синтаксис">
+        <meta name="keywords" CONTENT="kotlin, язык программирования, история, синтаксис">
+        <meta name="author" CONTENT="Пасюкова Екатерина">
+        <title>===Python===</title>
+        <link rel="StyleSheet" href="/css/StyleSheet.css" />
+    </head>
+    <BODY>
+        <div class="mainNavbar" align="center">
+
+            <p>
+                
+                <b>
+                    Всё о языке
+                    <!--Локальные таблицы стилей-->
+                    <img style="filter: drop-shadow(2px 2px 2px red) invert(75%);" src="/img/kotlin_without_background.png" alt="Kotlin" height="25">
+                    . Анкета.
+                </b>
+
+            </p>
+
+            &nbsp;
+            <a href="index.html">История</a>
+            &nbsp;
+            <a href="syntax.html">Синтаксис</a>
+            &nbsp;
+            <a href="sources.html">Источники</a>
+            &nbsp;
+            <a href="#">Лр3</a>
+            &nbsp;
+            <a href="forma.html">Анкета</a>
+            &nbsp;
+            <a href="tableDB.html">Таблицы из БД</a>
+
+           
+
+            <hr id="tophr" noshade size="5" /> <!--Использование горизонтальной линии-->
+        </div>
+
+        <article>
+            <H1>Анкета пользователя</H1>
+            <HR>
+            <FORM id="form" method="GET">
+                <H3>Заполните форму  и нажмите кнопку</H3>
+                <P>
+                    <TABLE>
+                        <TR>
+                            <TH align=right>Фамилия:
+                            <TD> <input type=text name=surname>
+                        <TR>
+                            <TH align=right>Имя:
+                            <TD> <input type=text name=name>
+                        <TR>
+                            <TH align=right>Отчество:
+                            <TD> <input type=text name=patronymic>
+                        <TR>
+                            <TH align=right>Пароль:
+                            <TD> <input type=password name=password>
+                        <TR>
+                            <TH align=right>Опыт в разрабтке на языке Kotlin:
+                            <TD>
+                                <table>
+                                    <td><input type=radio name=experience value="Нет опыта">Нет опыта
+                                    <td><input type=radio name=experience value="Менее 1 года">Менее 1 года
+                                    <td><input type=radio name=experience value="1 год">1 год
+                                    <td><input type=radio name=experience value="3 года">3 года
+                                    <td><input type=radio name=experience value="Более 5 лет">Более 5 лет
+                                </table>
+                        <TR>
+                            <TH align=right>Ваша работа:
+                            <TD>
+                                <select name=job>
+                                    <option>студент
+                                    <option>разработчик
+                                    <option>преподаватель
+                                    <option>другое
+                                </select>
+                        <TR>
+                            <TH align=right>Любимый язык:
+                            <TD>
+                                <table>
+                                    <td><input type=checkbox name=language value=Python>Python
+                                    <td><input type=checkbox name=language value=C>C
+                                    <td><input type=checkbox name=language value=php>php
+                                </table>
+                        <TR>
+                            <TH align=right>Комментарий:
+                            <TD>
+                                <textarea name=comment cols=30 rows=2>Введите текст</textarea>
+                        <TR>
+                            <TD colspan=2 align=center>
+                                <input type=submit value="ОТПРАВИТЬ">
+                    </TABLE>
+            </FORM>
+            <HR>
+        </article>
+        <article id="response">
+        </article>
+        <script src="/js/requestForm.js"></script>
+    </BODY>
+</HTML>

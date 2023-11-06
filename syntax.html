@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<html>
+<!--Вторая страница, использованы средства HTML5-->
+<head>
+    <!--Расширенное использование элемента meta-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-language" content="ru-RU">
+    <meta http-equiv="Cache-Control" content="public">
+    <meta name="description" CONTENT="Данный сайт содержит информацию о языке Kotlin, на нем Вы можете узнать историю языка программирования и его синтаксис">
+    <meta name="keywords" CONTENT="kotlin, язык программирования, история, синтаксис">
+    <meta name="author" CONTENT="Пасюкова Екатерина">
+    <title>Синтаксис Kotlin</title>
+    <link rel="StyleSheet" href="/css/StyleSheet.css" />
+</head>
+<body>
+    <!--Начало шапки сайта в верхней части страницы,
+    в неё же включено меню с гиперссылками для перехода между страницами-->
+    <div class="mainNavbar" align="center">
+
+        <p>
+            <div id="timeBlock"><span id="timeHours"></span>:<span id="timeMinutes"></span></div>
+            <b>
+                Всё о языке
+                <!--Локальные таблицы стилей-->
+                <img style="filter: drop-shadow(2px 2px 2px red) invert(75%);" src="/img/kotlin_without_background.png" alt="Kotlin" height="25">
+                . Синтаксис.
+            </b>
+
+        </p>
+
+        &nbsp;
+        <a href="index.html">История</a>
+        &nbsp;
+        <a href="syntax.html">Синтаксис</a>
+        &nbsp;
+        <a href="sources.html">Источники</a>
+        &nbsp;
+        <a href="#">Лр3</a>
+        &nbsp;
+        <a href="forma.html">Анкета</a>
+        &nbsp;
+        <a href="tableDB.html">Таблицы из БД</a>
+
+        <div id="author-button" style="position: absolute; top: 30px; right: 100px; background-color: rgb(255, 255, 255, 0);">
+            <img src="/img/icon-author.png" height="15" />
+        </div>
+
+        <hr id="tophr" noshade size="5" /> <!--Использование горизонтальной линии-->
+    </div>
+    <!--Конец шапки сайта в верхней части страницы-->
+    <div class="syntaxContent">
+        <!--Использование элементов header и nav-->
+        <header id="syntaxHeader">
+
+            <nav>
+                <h1 class="hNav">Содержание</h1>
+                <!--Начало нумерованного двухуровнего списка-->
+                <ol type="I">
+                    <li>
+                        <a href="#types-kotlin">Типы</a>
+                        <ol type="i">
+                            <li><a href="#main-types-kotlin">Основные типы</a></li>
+                            <li>Приведение и проверка типов</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#flow-control-kotlin">Управление потоком</a>
+                        <ol type="i">
+                            <li><a href="#conditions-and-cycles-kotlin">Условия и циклы</a></li>
+                            <li>Операторы перехода</li>
+                            <li>Исключения</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Функции и лямбды
+                        <ol type="i">
+                            <li>Функции</li>
+                            <li>Лямбды</li>
+                        </ol>
+                    </li>
+
+                </ol>
+                <!--Конец нумерованного двухуровнего списка-->
+            </nav>
+
+        </header>
+
+
+        <!--Использование элемента main-->
+        <main>
+            <!--<hr size="10" />-->
+            <!--Использование элемента article-->
+            <article id="aticle-types-kotlin">
+                <h2><a name="types-kotlin">Типы</a></h2>
+                <hr />
+                <!--Использование элемента section-->
+                <section>
+                    <h3><a name="main-types-kotlin">Основные типы</a></h3>
+                    <p>
+                        В Kotlin всё является объектом, в том смысле, что пользователь может вызвать функцию или получить доступ к свойству любой переменной. Некоторые типы являются встроенными, т.к. их реализация оптимизирована, хотя для пользователя они выглядят как обычные классы.
+                        В данном разделе описываются основные типы: <a href="#types-number-kotlin">числа </a>, <a href="#types-logical-kotlin">логические переменные</a>, <a href="#types-symbol-kotlin">символы</a>, <a href="#types-string-kotlin">строки и массивы</a>.
+                    </p>
+                </section>
+                <section>
+                    <h3><a name="types-number-kotlin">Числа</a></h3>
+                    <h4>Целочисленные типы</h4>
+                    <p>
+                        В Kotlin есть набор встроенных типов, которые представляют числа. Для целых чисел существует четыре типа с разными размерами и, следовательно, разными диапазонами значений.
+                    </p>
+                    <table class="table-content" border="1">
+                        <!--Использование элемента thead-->
+                        <thead>
+                            <tr><th>Тип     </th><th>Размер (биты) </th><th>Минимальное значение             </th><th>Максимальное значение</th></tr>
+                        </thead>
+                        <!--Использование элемента colgroup-->
+                        <colgroup bgcolor="#00BFFF">
+                            <col span="2" />
+                        </colgroup>
+                        <!--Использование элемента tbody-->
+                        <tbody>
+                            <tr><td align="center"><code>Byte</code>  </td><td align="center">8             </td><td align="center">-128                             </td><td align="center">127</td></tr>
+                            <tr><td align="center"><code>Short</code> </td><td align="center">16            </td><td align="center">-32768                           </td><td align="center">32767</td></tr>
+                            <tr><td align="center"><code>Int</code>   </td><td align="center">32            </td><td align="center">-2,147,483,648 (-2<sup>31</sup>) </td><td align="center">2,147,483,647 (2<sup>31</sup> - 1)</td></tr>
+                            <tr><td align="center"><code>Long</code>  </td><td align="center">64            </td><td align="center">-9,223,372,036,854,775,808 (-2<sup>63</sup>) </td><td align="center">9,223,372,036,854,775,807 (2<sup>63</sup> - 1)</td></tr>
+                        </tbody>
+                        <!--Использование элемента tfoot-->
+                        <tfoot>
+                            <!--Объединение столбцов-->
+                            <tr><td colspan="4" align="center">целочисленных типы</td></tr>
+                        </tfoot>
+                    </table>
+                    <!--Использование элемента code-->
+                    <p>
+                        Все переменные, инициализированные целыми значениями, не превышающими максимальное значение <code>Int</code>,
+                        имеют предполагаемый тип <code>Int</code>. Если начальное значение превышает это значение, то тип <code>Long</code>.
+                        Чтобы явно указать тип <code>Long</code>, добавьте после значения <code>L</code>.
+                    </p>
+                    <pre><code>val one = 1 // Int
+val threeBillion = 3000000000 // Long
+val oneLong = 1L // Long
+val oneByte: Byte = 1</code></pre>
+
+                </section>
+
+            </article>
+            <hr class="hr-between-article" size="10" />
+            <article id="aticle-flow-control-kotlin">
+                <h2><a name="flow-control-kotlin">Управление потоком</a></h2>
+                <hr />
+                <section>
+                    <h3><a name="conditions-and-cycles-kotlin">Условия и циклы</a></h3>
+                    <h4>Условное выражение if</h4>
+                    <p>
+                        В языке Kotlin <code>if</code> является выражением, т.е. оно возвращает значение.
+                        Это позволяет отказаться от тернарного оператора (<code>условие ? условие истинно : условие ложно</code>), потому что обычному <code>if</code>
+                        вполне по силам его заменить.
+                    </p>
+                    <pre><code>// обычное использование
+var max = a
+if (a < b) max = b
+
+// с блоком else
+var max: Int
+if (a > b) {
+    max = a
+} else {
+    max = b
+}
+
+// в виде выражения
+val max = if (a > b) a else b</code></pre>
+                    <p>
+                        "Ветви" выражения <code>if</code> могут быть блоками, т.е. содержать несколько строк кода, при этом последнее выражение является
+                        значением блока:
+                    </p>
+                    <pre><code>val max = if (a > b) {
+    print("возвращаем a")
+    a
+} else {
+    print("возвращаем b")
+    b
+}</code></pre>
+                    <p>
+                        Если вы используете <code>if</code> в качестве выражения (например, возвращая его значение или присваивая его переменной), то
+                        использование ветки <code>else</code> является обязательным.
+                    </p>
+
+                    <h4>Условное выражение when</h4>
+                    <p>
+                        <code>when</code> определяет условное выражение с несколькими "ветвями". Оно похоже на оператор <code>switch</code>, присутствующий в
+                        C-подобных языках.
+                    </p>
+                    <pre><code>when (x) {
+    1 -> print("x == 1")
+    2 -> print("x == 2")
+    else -> { // обратите внимание на блок
+        print("x не равен ни 1, ни 2")
+    }
+}</code></pre>
+                    <p>
+                        <code>when</code> последовательно сравнивает свой аргумент со всеми указанными значениями, пока не выполнится какое-либо из условий
+                        ветвей.
+                    </p>
+                    <p>
+                        <code>when</code> можно использовать и как выражение, и как оператор. При использовании его в виде выражения значение первой ветки,
+                        удовлетворяющей условию, становится значением всего выражения. При использовании в виде оператора значения отдельных
+                        веток отбрасываются. В точности как <code>if</code>: каждая ветвь может быть блоком и её значением является значение последнего
+                        выражения блока.
+                    </p>
+                    <p>Значение ветки <code>else</code> вычисляется в том случае, когда ни одно из условий в других ветках не удовлетворено.</p>
+                    <!--Использование элемента em-->
+                    <p>
+                        Если <code>when</code> используется как <em>выражение</em>, то ветка <code>else</code> является обязательной, за исключением случаев, в которых
+                        компилятор может убедиться, что ветки покрывают все возможные значения. Так происходит, например с записями
+                        класса <code>enum</code> и с подтипами <code>sealed</code> (изолированных) классов.
+                    </p>
+                    <pre><code>enum class Bit {
+    ZERO, ONE
+}
+val numericValue = when (getRandomBit()) {
+    Bit.ZERO -> 0
+    Bit.ONE -> 1
+    // 'else' не требуется, потому что все случаи учтены
+}</code></pre>
+                    <p>В <em>операторах</em> <code>when</code> ветка <code>else</code> является обязательной в следующих условиях:</p>
+                    <ul>
+                        <li>
+                            <code>when</code> имеет объект типа <code>Boolean</code>, <code>enum</code>, <code>sealed</code>
+                            или их nullable-аналоги;
+                        </li>
+                        <li>ветки <code>when</code> не охватывают все возможные случаи для этого объекта.</li>
+                    </ul>
+                    <pre><code>enum class Color {
+    RED, GREEN, BLUE
+}
+
+when (getColor()) {
+    Color.RED -> println("red")
+    Color.GREEN -> println("green")
+    Color.BLUE -> println("blue")
+    // 'else' не требуется, потому что все случаи учтены
+}
+
+when (getColor()) {
+    Color.RED -> println("red") // нет веток для GREEN и BLUE
+    else -> println("not red") // 'else' обязателен
+}</code></pre>
+                    <p>Если для нескольких значений выполняется одно и то же действие, то условия можно перечислять в одной ветке через запятую.</p>
+                    <pre><code>when (x) {
+    0, 1 -> print("x == 0 or x == 1")
+    else -> print("otherwise")
+}</code></pre>
+                    <p>Помимо констант в ветках можно использовать произвольные выражения.</p>
+                    <pre><code>when (x) {
+    s.toInt() -> print("s encodes x")
+    else -> print("s does not encode x")
+}</code></pre>
+                    <p>Также можно проверять вхождение аргумента в интервал <code>in</code> или <code>!in</code> или его наличие в коллекции:</p>
+                    <pre><code>when (x) {
+    in 1..10 -> print("x is in the range")
+    in validNumbers -> print("x is valid")
+    !in 10..20 -> print("x is outside the range")
+    else -> print("none of the above")
+}</code></pre>
+                    <p>
+                        Помимо этого Kotlin позволяет с помощью <code>is</code> или <code>!is</code> проверить тип аргумента. Обратите внимание,
+                        что благодаря умным приведениям вы можете получить доступ к методам и свойствам типа без
+                        дополнительной проверки.
+                    </p>
+                    <pre><code>fun hasPrefix(x: Any) = when(x) {
+    is String -> x.startsWith("prefix")
+    else -> false
+}</code></pre>
+                    <p>
+                        <code>when</code> удобно использовать вместо цепочки условий вида <code>if</code>-<code>else</code> <code>if</code>.
+                        При отсутствии аргумента условия работают как простые логические выражения, а тело ветки выполняется при его истинности.
+                    </p>
+                    <pre><code>when {
+    x.isOdd() -> print("x is odd")
+    y.isEven() -> print("y is even")
+    else -> print("x+y is odd")
+}</code></pre>
+                    <p>Можно получать переменную внутри <code>when</code> условия по следующему синтаксису:</p>
+                    <pre><code>fun Request.getBody() =
+    when (val response = executeRequest()) {
+        is Success -> response.body
+        is HttpError -> throw HttpException(response.status)
+}</code></pre>
+                    <p>Такая переменная, объявленная внутри условия <code>when</code> может быть видна только внутри тела этого <code>when</code>.</p>
+                </section>
+
+            </article>
+        </main>
+
+    </div>
+
+    <!--Использование элемента footer-->
+    <footer>
+        <hr noshade size="5" />
+        <p><b>Автор: Пасюкова Екатерина Алексеевна. Группа: Z0431</b></p>
+    </footer>
+    <script src="/js/JavaScript.js"></script>
+</body>
+
+</html>

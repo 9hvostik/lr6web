@@ -1,0 +1,279 @@
+﻿<!DOCTYPE HTML>
+<html>
+<!--Первая страница, использованы средства только HTML4-->
+<!---->
+<head>
+    <!--Расширенное использование элемента meta-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-language" content="ru-RU">
+    <meta http-equiv="Cache-Control" content="public">
+    <meta name="description" CONTENT="Данный сайт содержит информацию о языке Kotlin, на нем Вы можете узнать историю языка программирования и его синтаксис">
+    <meta name="keywords" CONTENT="kotlin, язык программирования, история, синтаксис">
+    <meta name="author" CONTENT="Пасюкова Екатерина">
+    <title>Язык Kotlin</title>
+    <link rel="StyleSheet" href="/css/StyleSheet.css" />
+    <!--Глобальные таблицы стилей-->
+    <style>
+        /*картинка в списке*/
+        ul {
+            list-style-image: url(../img/mark.png);
+        }
+        /*использование свойства transform*/
+        li {
+            text-transform: lowercase;
+        }
+        /*Использование символа + для объединения селекторов*/
+        h3 + p {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Начало шапки сайта в верхней части страницы,
+        в неё же включено меню с гиперссылками для перехода между страницами-->
+    
+    <div class="mainNavbar" align="center">
+
+        <p>
+            <div id="timeBlock"><span id="timeHours"></span>:<span id="timeMinutes"></span></div>
+            <b>
+                Всё о языке
+                <!--Локальные таблицы стилей-->
+                <img style="filter: drop-shadow(2px 2px 2px red) invert(75%);" src="/img/kotlin_without_background.png" alt="Kotlin" height="25">
+                . История.
+            </b>
+
+        </p>
+
+        &nbsp;
+        <a href="index.html">История</a>
+        &nbsp;
+        <a href="syntax.html">Синтаксис</a>
+        &nbsp;
+        <a href="sources.html">Источники</a>
+        &nbsp;
+        <a href="#">Лр3</a>
+        &nbsp;
+        <a href="forma.html">Анкета</a>
+        &nbsp;
+        <a href="tableDB.html">Таблицы из БД</a>
+
+        <div id="author-button" style="position: absolute; top: 30px; right: 100px; background-color: rgb(255, 255, 255, 0);">
+            <img src="/img/icon-author.png" height="15" />
+        </div>
+
+        <hr id="tophr" noshade size="5" /> <!--Использование горизонтальной линии-->
+    </div>
+    <!--Конец шапки сайта в верхней части страницы-->
+    <div class="content">
+
+        <!--Начало таблицы со структурой по варианту-->
+        <table id="infobox" border="5" width="300" align="right">
+            <tbody id="infoboxTbody">
+                <tr>
+                    <!--Объединение столбцов-->
+                    <!--Использование элемента th-->
+                    <th colspan="2" scope="colgroup" class="infobox-above" align="center">Kotlin</th>
+                </tr>
+                <tr id="trAfterNewTr">
+                    <!--Объединение столбцов-->
+                    <td colspan="2" class="infobox-image" align="center">
+                        <!--Вставка картинки в таблицу-->
+                        <img alt="Изображение логотипа" src="/img/Kotlin_logo_2021.svg.png" width="220" height="48">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="plainlist">Класс языка</th>
+                    <td class="plainlist">
+                        объектно-ориентированный язык программирования, язык JVM, язык программирования и свободное программное обеспечение
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="plainlist">Появился в</th>
+                    <td class="plainlist">22 июля 2011</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="plainlist">Автор</th>
+                    <td class="plainlist">JetBrains</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="plainlist">Расширение файлов</th>
+                    <td class="plainlist">.kt или .kts</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="plainlist">Выпуск</th>
+                    <td class="plainlist">1.9.10 (23 августа 2023)</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="plainlist">Испытал влияние</th>
+                    <td class="plainlist">
+                        Groovy, C#, Gosu, Java, Ruby, JavaScript, Scala, Python и ML
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="plainlist">Лицензия</th>
+                    <td class="plainlist">Apache License 2.0</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="plainlist">Сайт</th>
+                    <td class="plainlist">
+                        <a href="https://kotlinlang.org/">kotlinlang.org</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="plainlist">Платформа</th>
+                    <td class="plainlist">
+                        Java Virtual Machine, Dalvik virtual machine, JavaScript, iOS, watchOS, tvOS, macOS, Linux, Microsoft Windows и WebAssembly
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="text-content">
+            <div class="section">
+                <h2>Определение (<a href="https://ru.wikipedia.org/wiki/Kotlin">wikipedia.org</a>)</h2>
+                <!--Использование элемента strong и dfn-->
+                <p><dfn id="definition-kotlin"><strong>Kotlin (Ко́тлин)</strong></dfn>— статически типизированный, объектно-ориентированный язык программирования, работающий поверх Java Virtual Machine и разрабатываемый компанией JetBrains. Также компилируется в JavaScript и в исполняемый код ряда платформ через инфраструктуру LLVM. Язык назван в честь российского острова Котлин в Финском заливе, на котором расположен город Кронштадт.</p>
+                <p>Авторы ставили целью создать язык более лаконичный и типобезопасный, чем Java, и более простой, чем Scala. Следствием упрощения по сравнению со Scala стали также более быстрая компиляция и лучшая поддержка языка в IDE. Язык полностью совместим с Java, что позволяет Java-разработчикам постепенно перейти к его использованию; в частности, язык также встраивается Android, что позволяет для существующего Android-приложения внедрять новые функции на <a href="#definition-kotlin">Kotlin</a> без переписывания приложения целиком.</p>
+                <hr />
+                <h2>История</h2>
+                <p> В 2010 году программист питерской ИТ-компании JetBrains Андрей Бреслав вместе с коллегами начал разработку нового языка. На тот момент организация существовала 10 лет, а их главный продукт – IntelliJ IDEAК, полностью написанный на Java, – был уже “очень тяжел”. JetBrains не устраивал этот язык программирования, и было принято решение найти ему альтернативу. Поиски не увенчались успехом: ни один инструмент разработки не соответствовал желаемым требованиям.</p>
+                <p>Команда проекта, состоявшая из опытных специалистов, решила пойти другим путем и создать собственный язык, который бы отвечал всем потребностям компании и был способен решать широкий спектр задач.</p>
+                <p>
+                    Саму историю создания <a href="#definition-kotlin">Kotlin</a> разработчики называют сказочной, считая, что
+                    <!--Использование элемента q--><q>мы делали то, что хотели</q>. Главной целью команды было обратить на себя внимание Google и получить их поддержку, что удалось в 2016 году. Вскоре Android объявила об официальной поддержке <a href="#definition-kotlin">Kotlin</a> для разработки собственных приложений, а в 2019 Google объявила этот язык приоритетным для создания мобильных приложений под ее мобильную ОС.
+                </p>
+                <hr /> <!--Использование горизонтальной линии-->
+            </div>
+            <div class="section">
+                <h2>Особенности</h2>
+                Среди основных особенностей <a href="#definition-kotlin">Kotlin</a> можно выделить:
+                <ul id="list-features" class="list-features">
+                    <li>
+                        <h3>Краткость и выразительность</h3>
+                        <p>На этом делают акцент сами разработчики. Можно обходиться без лишних километров кода и писать все лаконично и понятно. Не требуется тратить время на проработку кучи бесполезных частей из-за синтаксиса, а код – короче в среднем на 35-40%.</p>
+                    </li>
+                    <li>
+                        <h3>Совместимость</h3>
+                        <p><a href="#definition-kotlin">Kotlin</a> идеально сочетается с Java. Это делает возможным простой и удобный перевод приложений с одного языка на другой, а также свободное использование фреймворков и библиотек Java.</p>
+                    </li>
+                    <li>
+                        <h3>Безопасность</h3>
+                        <p>Семантика языка состоит из принципов, которые помогают избежать сразу несколько грубых и частых ошибок, допускаемых при исполнении программы. Благодаря этому, можно не беспокоиться о безопасности написанного кода. Еще из плюсов: экономия денег и времени при тестировании и использовании.</p>
+
+                    </li>
+                    <li>
+                        <h3>Null Safety</h3>
+                        <p>В <a href="#definition-kotlin">Kotlin</a> решена одна из проблем Java – появление NullPointerException, поскольку в языке внедрена автоматическая проверка типов данных и отслеживание null-значений. При нахождении выдается ошибка компиляции.</p>
+                    </li>
+                    <li>
+                        <h3>Приведение типов</h3>
+                        <p>В большинстве случаев не нужно указывать операторы приведения, поскольку все это уже выполняет оператор is.</p>
+                    </li>
+                    <li>
+                        <h3>Использование корутинов</h3>
+                        <p>Корутины – легковесные потоки – дают возможность создавать неблокируемый параллельный код без фьючерсов.</p>
+                    </li>
+                    <li id="elLi" >
+                        <h3>Внедренные геттеры</h3>
+                        <p>Геттер – специальная функция, которая привязывается к свойству и упоминается после него. Сколько геттеров, столько и свойств в классе.</p>
+                    </li>
+                </ul>
+                </p>
+                <p>Однако нельзя сказать, что разработка идеальна. Стоит отметить, что по быстродействию <a href="#definition-kotlin">Kotlin</a> пока значительно уступает Java, поскольку базируется на виртуальной машине JVM, выпущенной конкретно под него, а не <a href="#definition-kotlin">Kotlin</a>. Кроме того, у нового языка совсем небольшое комьюнити, из-за чего язык развивается медленными темпами.</p>
+
+                <hr />
+            </div>
+            <div class="section">
+                <h2>Примеры Open Source проектов на языке <a href="#definition-kotlin">Kotlin</a></h2>
+                <ol class="list-projects">
+                    <li>
+                        <h3>Wiggles</h3>
+                        <!--Добавление картинок-->
+                        <p><img src="/img/wiggles.png" width="600" /></p>
+                        <p>
+                            Красивое приложение для собак, ищущих дом. Создано для демонстрации Jetpack Compose для Android Dev Challenge.<br />
+                            GitHub: <a href="https://github.com/Spikeysanju/Wiggles">https://github.com/Spikeysanju/Wiggles</a>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Flux</h3>
+                        <p><img src="/img/flux.png" width="600" /></p>
+                        <p>
+                            Flux — это динамическое погодное приложение, которое меняется в зависимости от времени и погоды в данное конкретное время. В нем есть динамичный пейзаж, который следует циклу день/ночь с несколькими слоями. Солнце и луна нарисованы с использованием квадратичной функции, вычисленной в соответствии с доступным пространством. Была также создана система генерации частиц для рисования эффектов.<br />
+                            GitHub: <a href="https://github.com/fidloo/flux">https://github.com/fidloo/flux</a>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Garbage collector</h3>
+                        <p><img src="/img/garbage-collector.png" width="600" /></p>
+                        <p>
+                            Приложение определяет виды отходов и выдает информацию о доступных видах утилизации в зависимости от местонахождения человека. Приложение распознает объект на экране и подскажет, как и где его удобнее отправить на переработку.<br />
+                            GitHub: <a href="https://github.com/popovbodya/Garbage-collector">https://github.com/popovbodya/Garbage-collector</a>
+                        </p>
+                    </li>
+                </ol>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!--Подвал в конце страницы-->
+    <div class="footer">
+        <hr noshade size="5" />
+        <p><b>Автор: Пасюкова Екатерина Алексеевна. Группа: Z0431</b></p>
+    </div>
+
+    <script src="/js/JavaScript.js"></script>
+</body>
+</html>
+
+<!--
+   <a href="ff.htm">Блок навигации </a>
+<p>Пример двухуровневого списка с комбинацией нумерации и маркеров</p>
+<ol>
+    <li>
+        зима
+        <ul>
+            <li> декабрь </li>
+            <li> январь </li>
+            <li> февраль </li>
+        </ul>
+    </li>
+    <li> весна </li>
+    <li> лето </li>
+</ol>
+<table border=2>
+    <caption>Таблица без объединенных ячеек</caption>
+    <tr> <th>столбец 1</th>  <th>столбец 2</th> <th>столбец 3</th></tr>
+    <tr> <td> ячейка 1 </td> <td> ячейка 2 </td><td> ячейка 3</td></tr>
+    <tr> <td> ячейка 4 </td> <td> ячейка 5 </td><td> ячейка 6</td></tr>
+    <tr> <td> ячейка 7 </td> <td> ячейка 8 </td><td> ячейка 9</td></tr>
+</table>  <br>
+
+<table border=2>
+    <caption> Объединение строк</caption>
+    <tr> <th>столбец 1</th>  <th>столбец 2</th> <th>столбец 3</th></tr>
+    <tr> <td> ячейка 1 </td> <td> ячейка 2 </td><td> ячейка 3</td></tr>
+    <tr> <td> ячейка 4 </td> <td> ячейка 5 </td><td rowspan=2> ячейка 6</td></tr>
+    <tr> <td> ячейка 7 </td> <td> ячейка 8 </td></tr>
+</table><br>
+
+<table border=2>
+    <caption> Объединение столбцов</caption>
+    <tr> <th>столбец 1</th>  <th>столбец 2</th> <th>столбец 3</th></tr>
+    <tr> <td> ячейка 1 </td> <td> ячейка 2 </td><td> ячейка 3</td></tr>
+    <tr> <td colspan=2> ячейка 4 </td> <td> ячейка 6</td></tr>
+    <tr> <td> ячейка 7 </td> <td> ячейка 8 </td><td> ячейка 9</td></tr>
+</table><br>
+
+<table border=2>
+    <caption> Объединение строк и столбцов</caption>
+    <tr> <th>столбец 1</th>  <th>столбец 2</th> <th>столбец 3</th></tr>
+    <tr> <td> ячейка 1 </td> <td> ячейка 2 </td><td> ячейка 3</td></tr>
+    <tr> <td colspan=2 rowspan=2> ячейка 4 </td> <td> ячейка 6</td></tr>
+    <tr> <td> ячейка 9</td></tr>
+</table>
+-->

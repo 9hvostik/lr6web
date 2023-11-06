@@ -1,0 +1,80 @@
+﻿<!DOCTYPE HTML>
+<html>
+<!--Первая страница, использованы средства только HTML4-->
+<!---->
+    <head>
+        <!--Расширенное использование элемента meta-->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-language" content="ru-RU">
+        <meta http-equiv="Cache-Control" content="public">
+        <meta name="description" CONTENT="Данный сайт содержит информацию о языке Kotlin, на нем Вы можете узнать историю языка программирования и его синтаксис">
+        <meta name="keywords" CONTENT="kotlin, язык программирования, история, синтаксис">
+        <meta name="author" CONTENT="Пасюкова Екатерина">
+        <title>Язык Kotlin</title>
+        <link rel="StyleSheet" href="/css/StyleSheet.css" />
+    </head>
+
+    <body>
+        <!--Начало шапки сайта в верхней части страницы,
+    в неё же включено меню с гиперссылками для перехода между страницами-->
+
+        <div class="mainNavbar" align="center">
+
+            <p>
+                <div id="timeBlock"><span id="timeHours"></span>:<span id="timeMinutes"></span></div>
+                <b>
+                    Всё о языке
+                    <!--Локальные таблицы стилей-->
+                    <img style="filter: drop-shadow(2px 2px 2px red) invert(75%);" src="/img/kotlin_without_background.png" alt="Kotlin" height="25">
+                    . Таблицы из БД.
+                </b>
+
+            </p>
+
+            &nbsp;
+            <a href="index.html">История</a>
+            &nbsp;
+            <a href="syntax.html">Синтаксис</a>
+            &nbsp;
+            <a href="sources.html">Источники</a>
+            &nbsp;
+            <a href="#">Лр3</a>
+            &nbsp;
+            <a href="forma.html">Анкета</a>
+            &nbsp;
+            <a href="tableDB.html">Таблицы из БД</a>
+
+            <div id="author-button" style="position: absolute; top: 30px; right: 100px; background-color: rgb(255, 255, 255, 0);">
+                <img src="/img/icon-author.png" height="15" />
+            </div>
+
+            <hr id="tophr" noshade size="5" /> <!--Использование горизонтальной линии-->
+        </div>
+
+
+        <header id="tableDbHeader">
+            <div id="buttons">
+                <button id="buttonGetTables" type="button">Просмотр таблиц</button>
+                <button id="buttonGetTablesWithoutKeys" type="button">Просмотр таблиц без служебных полей</button>
+                <button id="buttonAddReader" type="button">Добавить читателя</button>
+                <button id="buttonAddFeedback" type="button">Добавить отзыв</button>
+                <button id="buttonDelReader" type="button">Удалить читателя</button>
+                <button id="buttonDelFeedback" type="button">Удалить отзыв</button>
+                <button id="buttonViewingFeedbacks" type="button">Просмотр отзывов</button>
+            </div>
+            <div id="forms">
+                
+            </div>
+        </header>
+        <main id="tableDbContent">
+
+        </main>
+
+        <div class="footer">
+            <hr noshade size="5" />
+            <p><b>Автор: Пасюкова Екатерина Алексеевна. Группа: Z0431</b></p>
+        </div>
+        <script src="/js/JavaScript.js"></script>
+        <script src="/js/requestFormTableDb.js"></script>
+    </body>
+</html>
